@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whitehorse Transit Pass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ticket-container">
+    <!-- Top Header Layout -->
+    <div class="ticket-header">
+      <span class="header-title">Whitehorse Transit</span>
+      <button class="close-btn">✕</button>
+    </div>
+    <p class="subtitle">Show operator your ticket</p>
+    
+    <!-- Smooth Continuous Sizing Circle Area -->
+    <div class="circle-wrapper">
+      <div class="circle-outer">
+        <div class="circle-inner">
+          <!-- Full Native Layout Vector Rendering of "The Wilderness City" Logo -->
+          <svg class="transit-logo" viewBox="0 0 240 240">
+            <!-- Smokestacks & Flags -->
+            <path d="M90,30 L94,30 L94,55 L90,55 Z M125,42 L129,42 L129,55 L125,55 Z M160,42 L164,42 L164,55 L160,55 Z" fill="#231f20" />
+            <path d="M94,30 C110,30 120,27 135,30 C145,32 155,34 165,30 C155,34 145,35 135,34 C120,33 110,36 94,34 Z" fill="#727271" />
+            <path d="M94,34 C110,34 120,31 135,34 C145,36 155,38 165,34 C155,38 145,39 135,38 C120,37 110,40 94,38 Z" fill="#939392" />
+            <!-- Upper Deck Cabins -->
+            <path d="M75,55 L105,55 L105,70 L75,70 Z" fill="#231f20"/>
+            <path d="M70,70 L170,70 L170,85 L65,85 Z" fill="#231f20"/>
+            <!-- Main Ship Hull Base -->
+            <path d="M40,85 L205,85 L188,102 L45,102 Z" fill="#231f20"/>
+            <!-- Rear Paddle Wheel Layout -->
+            <circle cx='193' cy='93' r='11' fill='none' stroke='#231f20' stroke-width='3'/>
+            <path d='M182,93 L204,93 M193,82 L193,104 M185,85 L201,101 M185,101 L201,85' stroke='#231f20' stroke-width='1.5'/>
+            <!-- River Waves Base (Teal & Charcoal Accent Lines) -->
+            <path d="M35,106 Q 65,99 95,106 Q 125,113 155,106 Q 185,99 215,106" fill="none" stroke="#007a87" stroke-width="3"/>
+            <path d="M35,113 Q 65,106 95,113 Q 125,120 155,113 Q 185,106 215,113" fill="none" stroke="#007a87" stroke-width="3"/>
+            <path d="M35,120 Q 65,113 95,120 Q 125,127 155,120 Q 185,113 215,120" fill="none" stroke="#231f20" stroke-width="2"/>
+            <!-- Whitehorse Bold Text Header -->
+            <text x="125" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="34" text-anchor="middle" letter-spacing="-1.5" fill="#231f20">Whitehorse</text>
+            <!-- The Wilderness City Tagline Text Layout -->
+            <text x="125" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11.5" text-anchor="middle" letter-spacing="1.8" fill="#007a87">THE WILDERNESS CITY</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Live Dynamic Clock Display -->
+    <div id="ticket-clock" class="clock-display">00:00:00 AM</div>
+    
+    <!-- Ticket Info Box -->
+    <div class="info-card">
+      <div class="info-title">Adult 1-Month Pass</div>
+      <div class="info-location">Whitehorse, YT</div>
+      <div id="expiry-date" class="info-expiry">Expires Nov 8, 2026 at 12:00 AM</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
